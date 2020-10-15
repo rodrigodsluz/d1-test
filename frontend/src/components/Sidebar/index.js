@@ -4,15 +4,15 @@ import Tooltip from 'react-simple-tooltip';
 
 import whiteLogo from '../../assets/images/logotipo-branco.png';
 
-import chartPie from '../../assets/icons/chart-pie.svg';
-import rocket from '../../assets/icons/rocket.svg';
-import userFriends from '../../assets/icons/user-friends.svg';
-import ccmCloud from '../../assets/icons/ccm-cloud.svg';
-import externalLink from '../../assets/icons/external-link-alt-solid.svg';
-import gem from '../../assets/icons/gem.svg';
-import tools from '../../assets/icons/tools.svg';
-import exchange from '../../assets/icons/exchange-alt.svg';
-import signOut from  '../../assets/icons/sign-out-alt.svg';
+import chartPieIcon from '../../assets/icons/chart-pie.svg';
+import rocketIcon from '../../assets/icons/rocket.svg';
+import userFriendsIcon from '../../assets/icons/user-friends.svg';
+import ccmCloudIcon from '../../assets/icons/ccm-cloud.svg';
+import externalLinkIcon from '../../assets/icons/external-link-alt-solid.svg';
+import gemIcon from '../../assets/icons/gem.svg';
+import toolsIcon from '../../assets/icons/tools.svg';
+import exchangeIcon from '../../assets/icons/exchange-alt.svg';
+import signOutIcon from  '../../assets/icons/sign-out-alt.svg';
 
 import cx from 'clsx';
 
@@ -26,64 +26,56 @@ const Sidebar = () => {
             <img src={whiteLogo} alt="Logo branca"/>
 
             <div className="iconsContainer">
-                <div className="iconsAbove">
+                <div className="topIcons">
                         <Tooltip 
                                 content="Gráficos"
-                                color='#1A1731'
-                                background='#9196AB'
-                                placement='right'
                                 fontSize='15'
+                                placement='right'
+                                background='#9196AB'
+                                color='#1A1731'
                                 padding={11}
-                                radius={6}
-                                arrow={9}
                         >       
                                 <div className="icons">
-                                <img src={chartPie} alt="Gráficos"/>
+                                <img src={chartPieIcon} alt="Gráficos"/>
                                 </div>
                         </Tooltip>
 
                         <Tooltip 
                                 content="Jornadas"
-                                color='#1A1731'
-                                background='#9196AB'
-                                placement='right'
                                 fontSize='15'
+                                placement='right'
+                                background='#9196AB'
+                                color='#1A1731'
                                 padding={11}
-                                radius={6}
-                                arrow={9}
                         >
                                 <div className="icons">
-                                <img src={rocket} alt="Jornadas"/>
+                                <img src={rocketIcon} alt="Jornadas"/>
                                 </div>
                         </Tooltip>
 
                         <Tooltip 
                                 content="Amigos"
-                                color='#1A1731'
-                                background='#9196AB'
-                                placement='right'
                                 fontSize='15'
+                                placement='right'
+                                background='#9196AB'
+                                color='#1A1731'
                                 padding={11}
-                                radius={6}
-                                arrow={9}
                         >
                                 <div className="icons">
-                                <img src={userFriends} alt="Amigos"/>
+                                <img src={userFriendsIcon} alt="Amigos"/>
                                 </div>
                         </Tooltip>
 
                         <Tooltip 
                                 content="CCM Cloud"
-                                color='#1A1731'
-                                background='#9196AB'
-                                placement='right'
                                 fontSize='15'
+                                placement='right'
+                                background='#9196AB'
+                                color='#1A1731'
                                 padding={11}
-                                radius={6}
-                                arrow={9}
                         >
                                 <div className="icons">
-                                <img src={ccmCloud} alt="CCM Cloud"/>
+                                <img src={ccmCloudIcon} alt="CCM Cloud"/>
                                 </div>
                         </Tooltip>
 
@@ -91,78 +83,68 @@ const Sidebar = () => {
 
                         <Tooltip 
                                 content="Link externo"
-                                color='#1A1731'
-                                background='#9196AB'
-                                placement='right'
                                 fontSize='15'
+                                placement='right'
+                                background='#9196AB'
+                                color='#1A1731'
                                 padding={11}
-                                radius={6}
-                                arrow={9}
                         >
                                 <div className="icons">
-                                <img src={externalLink} alt="Link externo"/>
+                                <img src={externalLinkIcon} alt="Link externo"/>
                                 </div>
                         </Tooltip>
                 </div>
 
-                <div className="iconsBelow">
+                <div className="bottomIcons">
                         <Tooltip 
                                 content="GEM"
-                                color='#1A1731'
-                                background='#9196AB'
-                                placement='right'
                                 fontSize='15'
+                                placement='right'
+                                background='#9196AB'
+                                color='#1A1731'
                                 padding={11}
-                                radius={6}
-                                arrow={9}
                         >
                                 <div className="icons">
-                                <img src={gem} alt="GEM"/>
+                                <img src={gemIcon} alt="GEM"/>
                                 </div>
                         </Tooltip>
 
                         <Tooltip 
                                 content="Ferramentas"
-                                color='#1A1731'
-                                background='#9196AB'
-                                placement='right'
                                 fontSize='15'
+                                placement='right'
+                                background='#9196AB'
+                                color='#1A1731'
                                 padding={11}
-                                radius={6}
-                                arrow={9}
                         >
                                 <div className="icons">
-                                <img src={tools} alt="Ferramentas"/>
+                                <img src={toolsIcon} alt="Ferramentas"/>
                                 </div>
                         </Tooltip>
 
                         <Tooltip 
                                 content="Switch"
-                                color='#1A1731'
-                                background='#9196AB'
-                                placement='right'
                                 fontSize='15'
+                                placement='right'
+                                background='#9196AB'
+                                color='#1A1731'
                                 padding={11}
-                                radius={6}
-                                arrow={9}
                         >
                                 <div className="icons">
-                                <img src={exchange} alt="Switch"/>
+                                <img src={exchangeIcon} alt="Switch"/>
                                 </div>
                         </Tooltip>
 
                         <Tooltip 
                                 content="Sair"
-                                color='#1A1731'
-                                background='#9196AB'
-                                placement='right'
                                 fontSize='15'
+                                placement='right'
+                                background='#9196AB'
+                                color='#1A1731'
                                 padding={11}
-                                radius={6}
-                                arrow={9}
                         >
                                 <div className="icons">
-                                <img src={signOut} alt="Sair"/>
+                                <img src={signOutIcon} alt="Sair"/>
                                 </div>
                         </Tooltip>
                 </div>

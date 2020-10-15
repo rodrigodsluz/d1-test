@@ -35,14 +35,14 @@
   
   .iconsContainer .blueMiddleDivider {
     display: inline-block;
-    height: 1.6px;
+    height: 1.7px;
     width: 24px;
     margin: 18px 0;
     background: #00E1FF;
   }
   
-  .iconsContainer .iconsAbove,
-  .iconsContainer .iconsBelow{
+  .iconsContainer .topIcons,
+  .iconsContainer .bottomIcons{
     display: flex;
     flex-direction: column;
   }
