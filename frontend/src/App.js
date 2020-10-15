@@ -1,11 +1,16 @@
 import React from 'react';
+
+//import api from './service/api';
+
+import SideBar from './components/Sidebar';
+
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-    </div>
+    <>
+      <SideBar />
+    </>
   );
 }
 
