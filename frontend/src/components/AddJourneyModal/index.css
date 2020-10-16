@@ -1,0 +1,73 @@
+.modal-shadow {
+  background: #1a1449;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+}
+
+.modal-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.modal-cover {
+  background: #FFFFFF;
+  border-radius: 10px;
+  max-width: 430px;
+  padding: 30px;
+  margin: 200px auto;
+}
+
+.modal-header > h3{
+  display: flex;
+  justify-content: center;
+  color: #1a1449;
+}
+
+.modal-header > p {
+  margin: 20px 0;
+}
+
+.modal-body{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body > input{
+  margin: 7px 0;
+  border: 2px solid var(--color-input-border);
+  background: #FFFFFF;
+  height: 30px;
+  border-radius: 7px;
+}
+
+.modal-body label{
+  font-family: 'Gotham-Book';
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+button {
+  background: transparent;
+}
+
+.modal-exit-button,
+.modal-done-button {
+  border-radius: 7px;
+  padding: 5px;
+  color: #1a1449;
+  cursor: pointer;
+  font-family: 'Gotham-Bold';
+  font-size: 17px;
+}
+

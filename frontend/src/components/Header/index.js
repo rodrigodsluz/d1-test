@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Tooltip from 'react-simple-tooltip';
 
-import Modal from '../Modal';
+import AddJourneyModal from '../AddJourneyModal';
 
 import plusIcon from '../../assets/icons/plus.svg';
 import acmeLogo from '../../assets/images/acme-logo.png';
@@ -11,19 +11,17 @@ import './index.css';
 
 const Header = () => {
     const useModal = () => {
-        const [isShowing, setIsShowing] = useState(false);
-
-        function toggle() {
-          setIsShowing(!isShowing);
+        const [isOpened, setIsOpened] = useState(false);
+        const trigger = () => {
+          setIsOpened(!isOpened);
         }
-
         return {
-          isShowing,
-          toggle,
+          isOpened,
+          trigger,
         }
     };
 
-    const {isShowing, toggle} = useModal();
+    const {isOpened, trigger} = useModal();
 
     return(
         <div className="container">
@@ -44,16 +42,16 @@ const Header = () => {
             </div>
 
             <div className="rightHeader">
-                <input type="text" placeholder='Buscar'/>
+                    <input type="text" placeholder='Buscar'/>
 
-                <span className='lupa'></span>
+                    <span className='lupa'></span>
 
-                <button type='button' className="journeyButton" onClick={toggle}> 
+                <button type='button' className='journeyButton' onClick={trigger}> 
                    <img src={plusIcon} alt="Adicione uma Nova Jornada"/>  
                    Nova Jornada
                 </button>
 
-                <Modal isShowing={isShowing} hide={toggle} />
+                <AddJourneyModal trigger={trigger} isOpened={isOpened}/>
             </div>
 
         </div>
