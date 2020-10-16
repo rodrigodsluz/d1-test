@@ -1,0 +1,15 @@
+.itemJornadas{
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    height: auto;
+    bottom: 100px;
+}
+
+.itemJornadas:hover{
+    cursor: pointer;
+}
+
+.itemJornadas {
+    margin: 10px 0;
+}
