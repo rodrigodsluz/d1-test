@@ -12,9 +12,20 @@ const App = () => {
     <>
       <SideBar />
       <div className="container">
-      <Header />
+        <Header />
 
+        <div className="content">
+          <div className="journeys">
+            <h2>Jornadas</h2>
 
+           
+
+          </div>
+
+          <div className="informations">
+
+          </div>
+        </div>
       </div>
     </>
   );
