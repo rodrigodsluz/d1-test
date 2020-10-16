@@ -11,26 +11,29 @@ const AddJourneyModal = ({ trigger, isOpened  }) => {
                         <div className="modal-container">
                             <div className="modal-cover">
                                 <div className="modal-header">
-                                    <h3>+ Nova Jornada</h3>
-                                    <p/>                              
+                                    <h3>Nova Jornada</h3>
                                 </div>
 
                                 <div className="modal-body">
                                     <label>
-                                        Adicione uma nova jornada, digite um nome:
+                                        Dê um <strong>nome</strong> para essa Jornada
                                     </label>
 
                                     <input />
+
+                                    <label >
+                                        Você poderá alterar essa informação depois.
+                                    </label>
 
                                 </div>
 
                                 <div className="modal-footer">
                                     <button type="button" className="modal-done-button" onClick={trigger}>
-                                        <span >Pronto</span>
+                                        <span >Continuar</span>
                                     </button>
 
                                     <button type="button" className="modal-exit-button" onClick={trigger}>
-                                        <span >Sair</span>
+                                        <span >Cancelar</span>
                                     </button>
                                 </div>
                             </div>
