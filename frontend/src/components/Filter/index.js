@@ -13,8 +13,9 @@ const Filter = () => {
                  return(
                     <FilterInfos 
                         id={filterInfo.id} 
-                        amount={filterInfo.amount}
+                        quantity={filterInfo.quantity}
                         name={filterInfo.name} 
+                        key={filterInfo.id} 
                     />
                 )
                })

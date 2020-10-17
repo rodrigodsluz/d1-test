@@ -3,6 +3,7 @@ import React, {useEffect} from 'react';
 import SideBar from './components/Sidebar';
 import Header from './components/Header';
 import Filter from './components/Filter';
+import Information from './components/Information';
 
 import api from './services/api';
 import { useDataValue } from './context/data';
@@ -37,8 +38,8 @@ const App = () => {
 
           </div>
 
-          <div className="informations">
-
+          <div className="information">
+            <Information />
           </div>
         </div>
       </div>

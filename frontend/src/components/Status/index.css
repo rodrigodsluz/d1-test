@@ -1,0 +1,45 @@
+.journeyItemStatus {
+    font-family: 'Gotham-Book';
+    color: #3E4157;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    width: 150px;
+
+    
+    margin-right: 10px;
+}
+
+.journeyItens .journeyItemStatus > .svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+    margin-bottom: 1px;
+}
+
+.status1{
+    background: url('../../assets/icons/paper-plane.svg') no-repeat center;
+}
+.status2{
+    background: url('../../assets/icons/play-circle.svg') no-repeat center;
+}
+.status3{
+    background: url('../../assets/icons/pen.svg') no-repeat center;
+}
+.status4{
+    background: url('../../assets/icons/bed.svg') no-repeat center;
+}
+.status5{
+    background: url('../../assets/icons/check.svg') no-repeat center;
+}
+
+@media screen and (max-width: 825px){
+    .journeyItemStatus {
+        /* margin-left: -62px; */
+        white-space: nowrap;
+        position: absolute;
+
+        left: 338px;
+
+    }
+}

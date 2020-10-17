@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
 
 import { useDataValue } from '../../context/data';
-
 import api from '../../services/api';
 
 import './index.css';
 
-const FilterInfos = ( { id , amount, name } ) => {
-    const [dispatch] = useDataValue();
-    const [status, setStatus] = useState(false);
-    const [check, setCheck] = useState(false);
+const FilterInfos = ({id, quantity, name}) => {
+    const [{journey},dispatch] = useDataValue();
+    const [status, setStatus] = useState(false)
+    const [check, setCheck ] = useState(false)
 
-    const handleOnchange = (e) => {
-        setStatus(!status);
-        setCheck(e.target.check);
+    const handleChange = event => {
+        setStatus(!status)
+        setCheck(event.target.check)
+  
     }
  
     const chosenJourney = (id) => {
         if(id !== 0){
-            api.get( 'journey/' + id).then(response => 
+            api.get('journey/'+ id).then(response => 
                 dispatch({
                     type: 'SET_JOURNEY',
                     journey: response.data
@@ -26,38 +26,36 @@ const FilterInfos = ( { id , amount, name } ) => {
             );
         }
         else {
-            api.get( 'journey' ).then(response => 
+            api.get('journey').then(response => 
                 dispatch({
                     type: 'SET_JOURNEY',
                     journey: response.data
-                }), 
+                }),    
             );
         }
     }
+
     return(
         <>  
             <input 
                 type="checkbox" 
                 id={id} 
-                onClick={ () => ( chosenJourney(id) ) } 
-                onChange={handleOnchange}
-                /*  */
-                defaultChecked={check}
-                data-status={status}
-                /*  */
+                onChange={handleChange}
+                onClick={ () => (chosenJourney(id)) } 
+                journey={journey}
+                check={check}
             />
             <label htmlFor={id}>
-                <span className={'itemJornadas ' + status} id={id}>
-                    <p className={'svgbox Itemsvg' + id} />
+                <span className={ 'filterItens ' + status } id={id} >
+                    <p className={ 'svg icon' + id } />
 
-                    <p className='name'> {name} </p>
+                    <p className='name'>{name}</p>
 
-                    <p className='number'> {amount} </p>
+                    <p className='number'> {quantity}</p>
                 </span>
             </label>
         </>
     )
-
 }
 
 export default FilterInfos;

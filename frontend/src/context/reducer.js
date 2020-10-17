@@ -2,13 +2,13 @@ export const initialState = {
     journey: [{
         id: null,
         status: null,
-        receiver: null,
+        recipients: null,
         name: null,
         success: null
     }],
     filter: [{
         id: null,
-        amount: null,
+        quantity: null,
         name: null
     }]
 }

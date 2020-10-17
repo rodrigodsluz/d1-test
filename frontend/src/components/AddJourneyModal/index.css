@@ -1,5 +1,5 @@
 .modal-shadow {
-  background: #1a1449;
+  background: #1A1731;
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -14,6 +14,8 @@
   width: 100%;
   left: 0;
   top: 0;
+  z-index: 1;
+
 }
 
 .modal-cover {

@@ -26,6 +26,9 @@ body {
   --color-box: #117EFF;
   --color-logo-border: #EBEEF6;
   --color-input-border: #CCCFDE;
+  --color-name: #3E4157;
+  --color-journeys: #9196AB;
+
 }
 
 @font-face {
@@ -49,8 +52,11 @@ body {
 }
 
 .content{
-  margin-top: 250px;
   position: absolute;
+  display: flex;
+  top: 155px; 
+  width: 80%;
+  justify-content: space-between;
 }
 
 .filter h2{
@@ -61,6 +67,48 @@ body {
 .filter{
   display: flex;
   flex-direction: column;
-  margin-top: 30vh;
-  
+
 }
+
+.information{
+  position: relative;
+  top: 50px;
+  right: 50px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1250px){
+  .content{
+    display: inline;
+  }
+
+  .filter{
+
+    align-items: center;
+  }
+
+  .filter h2{
+    position: absolute;
+    margin-top: -30px;
+  }
+
+  .information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    right: -30px;    
+  }
+}
+
+@media screen and (max-width: 825px){
+
+  /* .information{
+    position: relative;
+
+    margin-top: 240px;
+
+    left: 10px;
+  } */
+}
+

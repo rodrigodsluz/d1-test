@@ -1,83 +1,80 @@
-.itemJornadas > .svgbox {
-    display: inline-block;
-    min-width: 22px;
-    height: 22px;
-    background-size: 22px !important;
-    margin-right: 10px;
-    
+.filterItens{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
 }
 
-.svgbox.Itemsvg0{
-    background: url('../../assets/icons/table.svg') no-repeat center;
-}
-.svgbox.Itemsvg1{
-    background: url('../../assets/icons/paper-plane.svg') no-repeat center;
-}
-.svgbox.Itemsvg2{
-    background: url('../../assets/icons/play-circle.svg') no-repeat center;
-}
-.svgbox.Itemsvg3{
-    background: url('../../assets/icons/pen.svg') no-repeat center;
-}
-.svgbox.Itemsvg4{
-    background: url('../../assets/icons/bed.svg') no-repeat center;
-}
-.svgbox.Itemsvg5{
-    background: url('../../assets/icons/check.svg') no-repeat center;
-}
-
-.itemJornadas .name {
-    display: inline-block;
-    width: 70%;
-    font-family: 'Gotham-Book';
-    font-size: 15px;
-    color: var(--color-primary);
-    text-transform: capitalize;
-    min-width: 118px;
-}
-
-.itemJornadas .name:hover{
-    color: var(--color-secondary);
-}
-
-.itemJornadas.true .name{
-    font-family: 'Gotham-Bold';
-    color: var(--color-secondary);
-}
-
-.itemJornadas.true .number{
-    font-family: 'Gotham-Bold';
-    background: var(--color-secondary);
-    border: none
-}
-
-
-.itemJornadas .hiddenid {
-    display: none;
-}
-
-.itemJornadas .number{
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 1px solid #EBEEF6;
-    background: #E4E6F1;
-    color: #fff;
-    font-size: 13px;
-    font-family: 'Gotham-Bold';
-    padding: 2px;
-    text-align: center;
+.filterItens:hover{
+    cursor: pointer;
 }
 
 .filter input[type='checkbox'] {
     position: absolute;
     z-index: -1;
     opacity: 0;
-  }
-  
- .filter input[type='checkbox'] + label {
-    position: relative;
-    cursor: pointer;
- }
-  
+}
+
+.filterItens > .svg {
+    min-width: 23px;
+    height: 23px;
+    margin-right: 11px;
+    z-index: -1;
+}
+
+.svg.icon0{
+    background: url('../../assets/icons/table.svg') no-repeat center;
+}
+.svg.icon1{
+    background: url('../../assets/icons/paper-plane.svg') no-repeat center;
+}
+.svg.icon2{
+    background: url('../../assets/icons/play-circle.svg') no-repeat center;
+}
+.svg.icon3{
+    background: url('../../assets/icons/pen.svg') no-repeat center;
+}
+.svg.icon4{
+    background: url('../../assets/icons/bed.svg') no-repeat center;
+}
+.svg.icon5{
+    background: url('../../assets/icons/check.svg') no-repeat center;
+}
+
+.filterItens .name {
+    font-family: 'Gotham-Book';
+    color: var(--color-name);
+    width: 121px;
+    z-index: -1;
+
+}
+
+.filterItens.true .name{
+    font-family: 'Gotham-Bold';
+    color: var(--color-box);
+}
+
+.filterItens .name:hover{
+    color: var(--color-box);
+}
+
+.filterItens .number{
+    background: #E4E6F1;
+    color:#9196AB;
+    font-size: 13px;
+    text-align: center;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    padding: 3.5px;
+    z-index: -1;
+
+}
+
+.filterItens.true .number{
+    font-family: 'Gotham-Bold';
+    background: var(--color-box);
+    padding: 4px;
+    border: none;
+    color: #FFFF;
+}
+
