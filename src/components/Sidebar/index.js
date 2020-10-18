@@ -23,7 +23,7 @@ const Sidebar = () => {
         <div className="sideBar">
             <span className={cx('topPosition', 'blueDivider', 'blueEffect')}></span>
             
-            <img className="whiteLogo" src={whiteLogo} alt="Logo branca"/>
+            <img src={whiteLogo} alt="Logo branca"/>
 
             <div className="iconsContainer">
                 <div className="topIcons">

@@ -68,3 +68,9 @@
 .bottomPosition{
   bottom: -18px;
 }
+
+@media screen and (max-width: 530px){
+  .sideBar{
+    display: none;
+  }
+}

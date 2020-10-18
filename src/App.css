@@ -106,7 +106,7 @@ body {
 
 @media screen and (max-width: 870px){
   body{
-    overflow-y: auto;
+    overflow: auto;
   }
 
   .journeys{
