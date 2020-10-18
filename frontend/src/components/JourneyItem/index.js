@@ -1,31 +1,31 @@
 import React from 'react';
 
-import Status from '../Status';
+import JourneyStatus from '../JourneyStatus';
 
 import './index.css';
 
 const JourneyItem = ({id, status, recipients, name, success}) => {
-    const filterStatus = () => {
+    const filterJourneyStatus = () => {
         switch (status){
             case 1:
                 return (
-                    <Status description='Em execução' status={status} />
+                    <JourneyStatus description='Em execução' status={status} />
                 );
             case 2:
                 return (
-                    <Status description='Ativa' status={status} />
+                    <JourneyStatus description='Ativa' status={status} />
                 ); 
             case 3:
                 return (
-                    <Status description='Configurando' status={status} />
+                    <JourneyStatus description='Configurando' status={status} />
                 );
             case 4:
                 return (
-                    <Status description='Ociosa' status={status} />
+                    <JourneyStatus description='Ociosa' status={status} />
                 );
             case 5:
                 return (
-                    <Status description='Concluída' status={status} />
+                    <JourneyStatus description='Concluída' status={status} />
                 );  
             default:
                 break;
@@ -45,7 +45,7 @@ const JourneyItem = ({id, status, recipients, name, success}) => {
                 {success}
             </span>
 
-            {filterStatus()}
+            {filterJourneyStatus()}
         </div>
     )
 }

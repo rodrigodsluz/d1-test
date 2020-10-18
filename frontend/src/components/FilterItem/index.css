@@ -44,13 +44,12 @@
     font-family: 'Gotham-Book';
     color: var(--color-name);
     width: 121px;
-    z-index: -1;
-
 }
 
 .filterItens.true .name{
     font-family: 'Gotham-Bold';
     color: var(--color-box);
+    z-index: -1;
 }
 
 .filterItens .name:hover{
@@ -77,4 +76,3 @@
     border: none;
     color: #FFFF;
 }
-

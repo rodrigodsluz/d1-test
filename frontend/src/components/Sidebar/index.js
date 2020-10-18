@@ -21,22 +21,24 @@ import './index.css';
 const Sidebar = () => {
     return(
         <div className="sideBar">
-            <span className={cx('blueTopDivider', 'blueDivider')}></span>
+            <span className={cx('topPosition', 'blueDivider', 'blueEffect')}></span>
             
-            <img src={whiteLogo} alt="Logo branca"/>
+            <img className="whiteLogo" src={whiteLogo} alt="Logo branca"/>
 
             <div className="iconsContainer">
                 <div className="topIcons">
                         <Tooltip 
-                                content="Gráficos"
+                                content="Análises"
                                 fontSize='15'
                                 placement='right'
-                                background='#9196AB'
-                                color='#1A1731'
-                                padding={11}
+                                background='#FFFF'
+                                color='#9196Ab'
+                                padding={10}
+                                border='none'
+                                radius={8}
                         >       
                                 <div className="icons">
-                                <img src={chartPieIcon} alt="Gráficos"/>
+                                <img src={chartPieIcon} alt="Análises"/>
                                 </div>
                         </Tooltip>
 
@@ -44,9 +46,11 @@ const Sidebar = () => {
                                 content="Jornadas"
                                 fontSize='15'
                                 placement='right'
-                                background='#9196AB'
-                                color='#1A1731'
-                                padding={11}
+                                background='#FFFF'
+                                color='#9196Ab'
+                                padding={10}
+                                border='none'
+                                radius={8}
                         >
                                 <div className="icons">
                                 <img src={rocketIcon} alt="Jornadas"/>
@@ -54,15 +58,17 @@ const Sidebar = () => {
                         </Tooltip>
 
                         <Tooltip 
-                                content="Amigos"
+                                content="Clientes"
                                 fontSize='15'
                                 placement='right'
-                                background='#9196AB'
-                                color='#1A1731'
-                                padding={11}
+                                background='#FFFF'
+                                color='#9196Ab'
+                                padding={10}
+                                border='none'
+                                radius={8}
                         >
                                 <div className="icons">
-                                <img src={userFriendsIcon} alt="Amigos"/>
+                                <img src={userFriendsIcon} alt="Clientes"/>
                                 </div>
                         </Tooltip>
 
@@ -70,68 +76,82 @@ const Sidebar = () => {
                                 content="CCM Cloud"
                                 fontSize='15'
                                 placement='right'
-                                background='#9196AB'
-                                color='#1A1731'
-                                padding={11}
+                                background='#FFFF'
+                                color='#9196Ab'
+                                padding={10}
+                                border='none'
+                                radius={8}
+                                className="noWrapIcon"
                         >
                                 <div className="icons">
                                 <img src={ccmCloudIcon} alt="CCM Cloud"/>
                                 </div>
                         </Tooltip>
 
-                        <span className='blueMiddleDivider'></span>
+                        <span className={cx('blueMiddleDivider', 'blueEffect')}></span>
 
                         <Tooltip 
-                                content="Link externo"
+                                content="Versão 01"
                                 fontSize='15'
                                 placement='right'
-                                background='#9196AB'
-                                color='#1A1731'
-                                padding={11}
+                                background='#FFFF'
+                                color='#9196Ab'
+                                padding={10}
+                                border='none'
+                                radius={8}
+                                className="noWrapIcon"
                         >
                                 <div className="icons">
-                                <img src={externalLinkIcon} alt="Link externo"/>
+                                <img src={externalLinkIcon} alt="Versão 01"/>
                                 </div>
                         </Tooltip>
                 </div>
 
                 <div className="bottomIcons">
                         <Tooltip 
-                                content="GEM"
+                                content="Administração"
                                 fontSize='15'
                                 placement='right'
-                                background='#9196AB'
-                                color='#1A1731'
-                                padding={11}
+                                background='#FFFF'
+                                color='#9196Ab'
+                                padding={10}
+                                border='none'
+                                radius={8}
                         >
                                 <div className="icons">
-                                <img src={gemIcon} alt="GEM"/>
+                                <img src={gemIcon} alt="Administração"/>
                                 </div>
                         </Tooltip>
 
                         <Tooltip 
-                                content="Ferramentas"
+                                content="Help Desk"
                                 fontSize='15'
                                 placement='right'
-                                background='#9196AB'
-                                color='#1A1731'
-                                padding={11}
+                                background='#FFFF'
+                                color='#9196Ab'
+                                padding={10}
+                                border='none'
+                                radius={8}
+                                className="noWrapIcon"
                         >
                                 <div className="icons">
-                                <img src={toolsIcon} alt="Ferramentas"/>
+                                <img src={toolsIcon} alt="Help Desk"/>
                                 </div>
                         </Tooltip>
 
                         <Tooltip 
-                                content="Switch"
+                                content="Trocar Conta"
                                 fontSize='15'
                                 placement='right'
-                                background='#9196AB'
-                                color='#1A1731'
-                                padding={11}
+                                background='#FFFF'
+                                color='#9196Ab'
+                                padding={10}
+                                border='none'
+                                radius={8}
+                                className="noWrapIcon"
                         >
                                 <div className="icons">
-                                <img src={exchangeIcon} alt="Switch"/>
+                                <img src={exchangeIcon} alt="Trocar Conta"/>
                                 </div>
                         </Tooltip>
 
@@ -139,9 +159,11 @@ const Sidebar = () => {
                                 content="Sair"
                                 fontSize='15'
                                 placement='right'
-                                background='#9196AB'
-                                color='#1A1731'
-                                padding={11}
+                                background='#FFFF'
+                                color='#9196Ab'
+                                padding={10}
+                                border='none'
+                                radius={8}
                         >
                                 <div className="icons">
                                 <img src={signOutIcon} alt="Sair"/>
@@ -149,7 +171,7 @@ const Sidebar = () => {
                         </Tooltip>
                 </div>
             </div>
-            <span className={cx('blueBottomDivider', 'blueDivider')}></span>
+            <span className={cx('bottomPosition', 'blueDivider', 'blueEffect')}></span>
 
         </div>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import FilterInfos from '../FilterInfos';
+import FilterItem from '../FilterItem';
 import {useDataValue} from '../../context/data';
 
 import './index.css';
@@ -9,13 +9,13 @@ const Filter = () => {
     const [{filter}] = useDataValue();
     return(  
         <>   
-            {filter.map(filterInfo => {
+            {filter.map(filterItem => {
                  return(
-                    <FilterInfos 
-                        id={filterInfo.id} 
-                        quantity={filterInfo.quantity}
-                        name={filterInfo.name} 
-                        key={filterInfo.id} 
+                    <FilterItem 
+                        id={filterItem.id} 
+                        quantity={filterItem.quantity}
+                        name={filterItem.name} 
+                        key={filterItem.id} 
                     />
                 )
                })

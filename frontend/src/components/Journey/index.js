@@ -4,11 +4,11 @@ import api from '../../services/api';
 
 import {useDataValue} from '../../context/data';
 
-import InformationItem from '../InformationItem';
+import JourneyItem from '../JourneyItem';
 
 import './index.css';
 
-const Information = () => {
+const Journey = () => {
     const [{journey}  , dispatch] = useDataValue();
 
     useEffect(() => {
@@ -33,7 +33,7 @@ const Information = () => {
                 <div>
                     {journey.map(journeyItem => {
                             return(    
-                                <InformationItem 
+                                <JourneyItem 
                                     id={journeyItem.id} 
                                     status={journeyItem.status}
                                     recipients={journeyItem.recipients}
@@ -50,4 +50,4 @@ const Information = () => {
     )
 }
 
-export default Information;
+export default Journey;

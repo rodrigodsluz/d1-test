@@ -5,15 +5,15 @@ import api from '../../services/api';
 
 import './index.css';
 
-const FilterInfos = ({id, quantity, name}) => {
+const FilterItem = ({id, quantity, name}) => {
     const [{journey},dispatch] = useDataValue();
-    const [status, setStatus] = useState(false)
+    const [active, setActive] = useState(false)
     const [check, setCheck ] = useState(false)
 
-    const handleChange = event => {
-        setStatus(!status)
+    const handleChange = (event) => {
+        setActive(!active)
         setCheck(event.target.check)
-  
+
     }
  
     const chosenJourney = (id) => {
@@ -42,11 +42,12 @@ const FilterInfos = ({id, quantity, name}) => {
                 id={id} 
                 onChange={handleChange}
                 onClick={ () => (chosenJourney(id)) } 
+                data-active={active}
                 journey={journey}
-                check={check}
+                defaultChecked={check}
             />
             <label htmlFor={id}>
-                <span className={ 'filterItens ' + status } id={id} >
+                <span className={ 'filterItens ' + active } id={id} >
                     <p className={ 'svg icon' + id } />
 
                     <p className='name'>{name}</p>
@@ -58,4 +59,4 @@ const FilterInfos = ({id, quantity, name}) => {
     )
 }
 
-export default FilterInfos;
+export default FilterItem;

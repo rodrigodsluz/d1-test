@@ -2,7 +2,7 @@ import React from 'react';
 
 import './index.css';
 
-const Status = ({description, status}) => {
+const JourneyStatus = ({description, status}) => {
   return (
     <>
       <span className='journeyItemStatus'>
@@ -14,4 +14,4 @@ const Status = ({description, status}) => {
   )
 }
 
-export default Status;
+export default JourneyStatus;

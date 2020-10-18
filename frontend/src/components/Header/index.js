@@ -27,12 +27,15 @@ const Header = () => {
         <div className="container">
             <div className="leftHeader">
                 <Tooltip 
-                    content="Albert Einstein"
+                    content="Antônio da Silva"
                     fontSize='15'
-                    placement='left'
-                    background='#9196AB'
-                    color='#1A1731'
-                    padding={11}
+                    placement='right'
+                    background='#3E4157'
+                    color='#FFFF'
+                    padding={10}
+                    border='none'
+                    radius={8}
+                    className="noWrapIcon"
                 >
                     <span className='user'>A</span>
                 </Tooltip>

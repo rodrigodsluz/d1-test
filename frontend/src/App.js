@@ -3,7 +3,7 @@ import React, {useEffect} from 'react';
 import SideBar from './components/Sidebar';
 import Header from './components/Header';
 import Filter from './components/Filter';
-import Information from './components/Information';
+import Journey from './components/Journey';
 
 import api from './services/api';
 import { useDataValue } from './context/data';
@@ -26,20 +26,17 @@ const App = () => {
 
   return (
     <>
-      <SideBar />
+      <SideBar/>
       <div className="container">
-        <Header />
-
+        <Header/>
         <div className="content">
           <div className="filter">
             <h2>Jornadas</h2>
-
             <Filter/>
-
           </div>
 
-          <div className="information">
-            <Information />
+          <div className="journeys">
+            <Journey/>
           </div>
         </div>
       </div>

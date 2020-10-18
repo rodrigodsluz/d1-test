@@ -5,7 +5,6 @@
 }
 
 body {
-  font-family: "Gotham-Book";
   background: var(--color-background );
   font-family: 'Gotham-Bold', 'Gotham-Book', sans-serif;
   overflow: hidden;
@@ -70,7 +69,7 @@ body {
 
 }
 
-.information{
+.journeys{
   position: relative;
   top: 50px;
   right: 50px;
@@ -83,32 +82,35 @@ body {
   }
 
   .filter{
-
     align-items: center;
+    padding: 13px;
+    position: relative;
+
+    margin: 0 90px 0 146px;
   }
 
   .filter h2{
     position: absolute;
-    margin-top: -30px;
+    margin-top: -40px;
   }
 
-  .information{
+  .journeys{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 20px;
-    right: -30px;    
+    top: -20px;
+    width: 100%;
+    right: -30px; 
   }
 }
 
-@media screen and (max-width: 825px){
+@media screen and (max-width: 870px){
+  body{
+    overflow-y: auto;
+  }
 
-  /* .information{
-    position: relative;
-
-    margin-top: 240px;
-
-    left: 10px;
-  } */
+  .journeys{
+    left: 33px;
+  }
 }
 

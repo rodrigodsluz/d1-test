@@ -22,7 +22,7 @@
 }
 
 .journeyHeader .journeyRecipient{
-    margin-left: 47px;
+    margin-left: 49px;
 
 }
 
@@ -31,7 +31,7 @@
 }
 
 .journeyHeader .journeyStatus{
-    margin-right: 90px;
+    margin-right: 92px;
 }
 
 @media screen and (max-width: 825px){
@@ -42,7 +42,6 @@
     .journeyHeader .journeyName{
         margin-right: -140px;
         padding-left: -3;
-
     }
 
     .journeyHeader .journeyRecipient{
@@ -55,7 +54,5 @@
     
     .journeyHeader .journeyStatus{
         padding-left: 5px;
-
     }
-
 }

@@ -59,6 +59,10 @@
     cursor: pointer;
 }
 
+.rightHeader > input:hover{
+    box-shadow: 0px 1px 4px 2px rgb(217, 219, 228);
+}
+
 .rightHeader .lupa{
     height: 10px;
     width: 15px;
@@ -90,6 +94,10 @@
     margin-right: 5px;
 }
 
+.journeyButton:hover{
+    background-image: linear-gradient(to right, rgb(0, 225, 255), rgb(17, 126, 255));
+}
+
 @media screen and (max-width: 870px){
     .leftHeader{
         margin-left: 30px;
@@ -106,6 +114,11 @@
         margin: 15px 140px;
     }
 
+    .leftHeader{
+        margin: 0 60px 0 -60px;
+        justify-content: center;
+    }
+
     .rightHeader{
         left: -60px;
         top: 19px;
@@ -115,5 +128,4 @@
         left: 12px;
         position: absolute;
     }
-
 } 

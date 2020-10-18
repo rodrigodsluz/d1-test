@@ -36,7 +36,6 @@
   width: 50px;
 
   margin-left: 85px;
-
   margin-right: 85px;
 }
 
@@ -44,48 +43,23 @@
   .journeyItens{
       width: 10px;
       margin-left: -18px;
-
       padding: 0 60% 0 48%;
-
       position: relative;
-
   }
 
   .journeyItens .journeyItemName{
-    margin-left: -162px;
-
+    margin-left: -164px;
     width: 100px;
-
-
-
   }
 
   .journeyItemRecipient{
     left: 128px;
-
-
-
-
     justify-content: center;
-
-
     position: absolute;
-
-    
-    
-
-   
   }
 
   .journeyItens .journeyItemSuccess{
-
     position: absolute;
-
-
-
-
     left: 187px;
   } 
-
-
 }
