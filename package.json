@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "Engines":{
+  "engines":{
     "node": "12.18.4",
     "yarn": "1.22.5"
   },
