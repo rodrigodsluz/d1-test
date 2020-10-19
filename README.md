@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <img alt="D1" title="D1" src="logotipo.jpeg" />
+</h1>
 
-## Available Scripts
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar-o-projeto">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+![Screenshot](d1-image.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## 💻 Projeto
 
-### `yarn test`
+  Este projeto tem o intuito de avaliar as habilidades, o conhecimento e experiência no desenvolvimento front-end em ReactJS e suas bibliotecas.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔖 Layout
 
-### `yarn build`
+Você pode visualizar o layout do projeto através [desse link](https://xd.adobe.com/view/f41cc902-3388-42d8-826a-8cbd874656bb-a14f/).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Funcionalidades
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Existe uma API com dados que precisam ser consumidos, nela contém um filtro e uma tabela, é preciso demonstrar esses dados por meio desse filtro, de forma que ao clicar nele apareça os dados referentes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para manipular e distribuir os dados foi utilizado o conceito de Context API e para utilizar a API foi usada a biblioteca Axios.
 
-### `yarn eject`
+Além disso, como visto acima, há um layout com diversos detalhes a serem implementados, entre eles temos: sidebar com ícones, header, o filtro e tabela com os dados, etc e para isso foi utilizado a biblioteca Tooltip.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Cabe ressaltar que o site está completamente responsivo, funcionando em telas desktop, tablets e dispositivos móveis.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⌨ Como executar o projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+# Clonar o repositório
+git clone https://github.com/rodrigodsluz/d1-test.git
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Entrar no diretório
+cd d1-test
 
-## Learn More
+# Baixar as dependências
+yarn install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Executar o site
+yarn start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feito isso, abra o seu navegador e acesse `http://localhost:3000/`
 
-### Code Splitting
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## :memo: Licença
 
-### Analyzing the Bundle Size
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+---
 
-### Making a Progressive Web App
+Feito com ♥ por Rodrigo Duarte!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
